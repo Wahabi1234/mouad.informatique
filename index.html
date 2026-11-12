@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d1b">
+<meta name="description" content="Mouad Informatique. Websites, digital marketing, SEO, social media, AI solutions and custom software.">
+<title>Mouad Informatique | Digital Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script>
+(function(){var d=document.documentElement;try{var t=localStorage.getItem('mi-theme')||'dark',l=localStorage.getItem('mi-lang');if(!l){var n=(navigator.language||'en').slice(0,2).toLowerCase();l=(n==='fr'||n==='ar')?n:'en'}d.setAttribute('data-theme',t);d.lang=l;d.dir=l==='ar'?'rtl':'ltr'}catch(e){d.setAttribute('data-theme','dark')}})();
+</script>
+<style>
+:root{--bg:#080d1b;--panel:#10182b;--panel2:#121e35;--text:#f4f7ff;--muted:#9aa8c0;--blue:#477bff;--cyan:#43d7f5;--line:rgba(166,190,235,.13);--radius:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.container{width:min(1160px,calc(100% - 44px));margin:auto}
+section{padding:105px 0;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#85b4ff;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.eyebrow:before{content:"";width:22px;height:1px;background:var(--cyan)}
+.section-head{max-width:650px;margin-bottom:44px}
+.section-head h2{font:800 clamp(2rem,4vw,3.25rem)/1.12 Manrope,sans-serif;letter-spacing:-.045em;margin:16px 0}
+.section-head p{color:var(--muted);font-size:1.03rem}
+.gradient{background:linear-gradient(100deg,#fff 4%,#83aaff 52%,#42d9f2 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+header{height:82px;position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(8,13,27,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font:800 1.08rem Manrope,sans-serif;letter-spacing:-.03em}
+.brand-mark{width:39px;height:39px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#06101f;font-size:1.1rem;box-shadow:0 8px 28px #477bff44}
+.brand small{display:block;color:#8291aa;font:600 .58rem "DM Sans";letter-spacing:.2em;margin-top:-3px}
+.nav-links{display:flex;align-items:center;gap:30px;color:#c0cbe0;font-size:.9rem}
+.nav-links a:hover{color:#fff}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:13px 21px;font-weight:700;transition:.25s;cursor:pointer}
+.nav-cta,.btn-primary{background:linear-gradient(110deg,var(--blue),#269fdf);color:white;box-shadow:0 10px 28px #2d77ff35}
+.nav-cta:hover,.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 34px #2d77ff55}
+.menu-btn{display:none;background:none;color:white;border:0;font-size:1.35rem}
+.hero{min-height:780px;padding:155px 0 90px;display:flex;align-items:center;overflow:hidden}
+.hero:before{content:"";position:absolute;width:680px;height:680px;right:-150px;top:80px;background:radial-gradient(circle,#2763df35 0,transparent 68%);pointer-events:none}
+.hero:after{content:"";position:absolute;width:420px;height:420px;left:-230px;bottom:-150px;background:radial-gradient(circle,#22c5e833 0,transparent 68%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:55px;align-items:center;position:relative;z-index:1}
+.hero h1{font:800 clamp(2.8rem,5.7vw,5rem)/1.06 Manrope,sans-serif;letter-spacing:-.065em;margin:22px 0}
+.hero-copy{font-size:1.1rem;color:var(--muted);max-width:570px;margin-bottom:30px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:13px}
+.btn-outline{border:1px solid #62749366;color:#e8efff;background:#ffffff06}
+.btn-outline:hover{border-color:#6ba5ff;background:#ffffff0b;transform:translateY(-3px)}
+.hero-proof{display:flex;gap:24px;margin-top:42px;flex-wrap:wrap}
+.proof{display:flex;align-items:center;gap:10px;color:#aebbd0;font-size:.84rem}
+.proof i{color:var(--cyan)}
+.hero-visual{position:relative;min-height:470px}
+.hero-photo{position:absolute;inset:12px 0 12px 30px;border-radius:30px;overflow:hidden;border:1px solid #9ebdff30;box-shadow:0 30px 90px #0008}
+.hero-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.82) brightness(.72)}
+.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#0c1c3c22,#07101f88)}
+.float-card{position:absolute;z-index:2;background:#111c31ed;border:1px solid #a8c7ff2c;backdrop-filter:blur(14px);padding:16px 18px;border-radius:17px;box-shadow:0 18px 45px #0007}
+.float-card.top{top:42px;left:0}.float-card.bottom{right:-18px;bottom:42px}
+.float-card strong{display:block;font:700 1rem Manrope}.float-card span{font-size:.78rem;color:#9eacc3}
+.float-icon{display:inline-grid;place-items:center;width:35px;height:35px;border-radius:11px;background:#2d76ff2b;color:#66b7ff;margin-right:8px}
+.visual-grid{position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:35px 35px;mask-image:linear-gradient(black,transparent);pointer-events:none}
+.trust-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:25px 0;background:#ffffff03}
+.trust-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.trust-label{color:#7888a4;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.trust-item{color:#bdc9dc;font:700 .91rem Manrope;display:flex;align-items:center;gap:9px}.trust-item i{color:#69a8ff}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.service-card{padding:28px;background:linear-gradient(145deg,#121e34,#0d1527);border:1px solid var(--line);border-radius:var(--radius);min-height:245px;transition:.3s;position:relative;overflow:hidden}
+.service-card:before{content:"";position:absolute;width:150px;height:150px;right:-90px;top:-90px;border-radius:50%;background:#3d83ff1b;transition:.3s}
+.service-card:hover{transform:translateY(-7px);border-color:#5a9cff66;box-shadow:0 20px 45px #0003}
+.service-card:hover:before{transform:scale(2)}
+.service-icon{width:49px;height:49px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#3978ff30,#36d4ef20);border:1px solid #69aaff35;color:#70c6ff;font-size:1.15rem;margin-bottom:22px}
+.service-card h3{font:700 1.13rem Manrope;margin-bottom:10px}
+.service-card p{font-size:.91rem;color:var(--muted)}
+.service-tag{display:inline-block;margin-top:18px;color:#7cb6ff;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.about{background:linear-gradient(180deg,transparent,#101a2d88,transparent)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.about-image{height:470px;border-radius:28px;overflow:hidden;border:1px solid var(--line);position:relative}
+.about-image img{width:100%;height:100%;object-fit:cover;filter:brightness(.75) saturate(.8)}
+.about-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#07101d88,transparent 70%)}
+.about-stamp{position:absolute;z-index:1;bottom:25px;left:25px;background:#0b1427dd;border:1px solid #ffffff25;padding:14px 18px;border-radius:14px;font-weight:700}
+.about-copy h2{font:800 clamp(2rem,4vw,3.1rem)/1.12 Manrope;letter-spacing:-.05em;margin:16px 0}
+.about-copy>p{color:var(--muted);margin-bottom:24px}
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin-top:26px}
+.benefit{display:flex;gap:11px;color:#dce6f7;font-size:.9rem}.benefit i{color:var(--cyan);margin-top:5px}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.step{border-top:1px solid #4e83d955;padding:22px 18px 10px 0}
+.step-num{font:800 2rem Manrope;color:#5a9cff55}
+.step h3{font:700 1rem Manrope;margin:10px 0}.step p{color:var(--muted);font-size:.88rem}
+.cta-band{padding:65px;border-radius:30px;background:radial-gradient(circle at 90% 10%,#39c9ed38,transparent 35%),linear-gradient(120deg,#173a7d,#11294f 65%,#10253d);border:1px solid #83baff35;display:flex;justify-content:space-between;align-items:center;gap:30px;overflow:hidden}
+.cta-band h2{font:800 clamp(1.8rem,3.5vw,2.8rem)/1.15 Manrope;letter-spacing:-.04em;max-width:620px;margin:12px 0}
+.cta-band p{color:#c2d1e9}
+.cta-band .btn{background:#fff;color:#0c1b34;white-space:nowrap}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px}
+.contact-info h2{font:800 clamp(2rem,4vw,3.1rem)/1.1 Manrope;letter-spacing:-.05em;margin:15px 0}
+.contact-info>p{color:var(--muted);margin-bottom:28px}
+.contact-link{display:flex;align-items:center;gap:14px;padding:17px 0;border-bottom:1px solid var(--line)}
+.contact-link .ico{width:44px;height:44px;border-radius:14px;background:#367bff22;color:#70b5ff;display:grid;place-items:center;font-size:1.1rem}
+.contact-link small{display:block;color:#8c9bb3;font-size:.76rem}.contact-link strong{font-size:.96rem}
+.contact-panel{padding:34px;background:linear-gradient(145deg,#121f37,#0d1527);border:1px solid var(--line);border-radius:25px}
+.contact-panel h3{font:700 1.35rem Manrope;margin-bottom:8px}.contact-panel>p{color:var(--muted);font-size:.9rem;margin-bottom:24px}
+.field{margin-bottom:16px}.field label{display:block;color:#cbd6e8;font-size:.82rem;margin-bottom:7px}
+.field input,.field textarea,.field select{width:100%;border:1px solid #9bb2d329;border-radius:12px;background:#080f1e;color:white;padding:14px 15px;outline:none;font:inherit}
+.field input:focus,.field textarea:focus{border-color:#579cff}.field textarea{min-height:120px;resize:vertical}
+.contact-panel .btn{width:100%}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#8190a9;font-size:.83rem}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-social{display:flex;gap:18px}.footer-social a:hover{color:#7eb7ff}
+.whatsapp-float{position:fixed;z-index:45;right:23px;bottom:23px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#20c879;color:#fff;font-size:1.65rem;box-shadow:0 12px 32px #20c87955;transition:.25s}
+.whatsapp-float:hover{transform:translateY(-4px) scale(1.04)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding-top:130px}.hero-visual{min-height:410px}.services-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:35px}.about-image{height:370px}.process-grid{grid-template-columns:repeat(2,1fr)}.cta-band{padding:42px;align-items:flex-start;flex-direction:column}.nav-links{gap:18px}}
+@media(max-width:650px){.container{width:min(100% - 32px,1160px)}section{padding:76px 0}header{height:72px}.menu-btn{display:block}.nav-links{display:none;position:absolute;top:72px;left:0;right:0;padding:22px;background:#0b1427;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:17px}.nav-links.open{display:flex}.nav-links .nav-cta{text-align:center}.hero{min-height:auto;padding:125px 0 65px}.hero-grid{gap:35px}.hero h1{font-size:2.75rem}.hero-copy{font-size:1rem}.hero-visual{min-height:340px}.hero-photo{inset:10px 0}.float-card.bottom{right:0;bottom:20px}.float-card.top{top:25px}.services-grid{grid-template-columns:1fr}.service-card{min-height:auto}.trust-inner{justify-content:flex-start}.trust-label{width:100%}.trust-item{width:calc(50% - 12px);font-size:.8rem}.benefits{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr 1fr}.cta-band{padding:30px 24px}.contact-panel{padding:24px}.footer-inner{align-items:flex-start;flex-direction:column}.about-image{height:320px}}
+
+/* ===== Language switcher & theme toggle ===== */
+.nav-tools{display:flex;align-items:center;gap:10px}
+.lang-switch{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:#ffffff08}
+.lang-switch button{border:0;background:none;color:#aebbd0;font:700 .72rem "DM Sans",sans-serif;letter-spacing:.05em;padding:6px 10px;border-radius:999px;cursor:pointer;transition:.2s}
+.lang-switch button:hover{color:#fff}
+.lang-switch button.active,.lang-switch button.active:hover{background:linear-gradient(110deg,var(--blue),#269fdf);color:#fff}
+.theme-btn{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#ffffff08;color:#cbd6e8;cursor:pointer;display:grid;place-items:center;font-size:.95rem;transition:.2s}
+.theme-btn:hover{border-color:#6ba5ff;color:#fff}
+.theme-btn .fa-moon{display:none}
+.tools-mobile{display:none}
+@media(min-width:1101px){.nav-links{margin-inline-start:auto;margin-inline-end:22px}}
+@media(max-width:1100px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;padding:22px;background:#0b1427;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:17px}.nav-links.open{display:flex}.nav-links .nav-cta{text-align:center}}
+@media(max-width:650px){.nav-tools .lang-switch,.nav-tools .theme-btn{display:none}.tools-mobile{display:flex;align-items:center;justify-content:center;gap:14px;padding-top:6px}}
+
+/* ===== Arabic / RTL ===== */
+html[lang="ar"] body,html[lang="ar"] body *:not(i){font-family:"Cairo","DM Sans",sans-serif!important;letter-spacing:0!important}
+html[lang="ar"] h1,html[lang="ar"] h2{line-height:1.3!important}
+html[lang="ar"] .hero-copy,html[lang="ar"] p{line-height:1.8}
+.brand{direction:ltr}
+[dir="rtl"] .fa-arrow-right{transform:scaleX(-1)}
+[dir="rtl"] .contact-link strong{direction:ltr;unicode-bidi:isolate;display:inline-block}
+[dir="rtl"] .hero:before{right:auto;left:-150px}
+[dir="rtl"] .hero:after{left:auto;right:-230px}
+[dir="rtl"] .service-card:before{right:auto;left:-90px}
+[dir="rtl"] .about-stamp{left:auto;right:25px}
+[dir="rtl"] .step{padding:22px 0 10px 18px}
+@media(min-width:651px){[dir="rtl"] .hero-photo{inset:12px 30px 12px 0}[dir="rtl"] .float-card.top{left:auto;right:0}[dir="rtl"] .float-card.bottom{right:auto;left:-18px}}
+@media(max-width:650px){[dir="rtl"] .float-card.top{left:auto;right:0}[dir="rtl"] .float-card.bottom{right:auto;left:0}}
+
+/* ===== Light mode ===== */
+html[data-theme="light"]{--bg:#f3f6fc;--panel:#fff;--panel2:#f1f5fc;--text:#0d1630;--muted:#586783;--line:rgba(30,55,110,.13);color-scheme:light}
+[data-theme="light"] .gradient{background-image:linear-gradient(100deg,#1b3f9e 4%,#2f6bff 52%,#0a95b8 100%)}
+[data-theme="light"] .cta-band .gradient,[data-theme="light"] .about-stamp .gradient{background-image:linear-gradient(100deg,#fff 4%,#83aaff 52%,#42d9f2 100%)}
+[data-theme="light"] header{background:rgba(255,255,255,.86)}
+[data-theme="light"] .nav-links{color:#3a4a68}
+[data-theme="light"] .nav-links a:not(.nav-cta):hover{color:#0d1630}
+@media(max-width:1100px){[data-theme="light"] .nav-links{background:#fff}}
+[data-theme="light"] .menu-btn{color:var(--text)}
+[data-theme="light"] .lang-switch{background:#1b3a7a0a}
+[data-theme="light"] .lang-switch button{color:#4a5876}
+[data-theme="light"] .lang-switch button:hover{color:#0d1630}
+[data-theme="light"] .lang-switch button.active,[data-theme="light"] .lang-switch button.active:hover{color:#fff}
+[data-theme="light"] .theme-btn{background:#1b3a7a0a;color:#34425e}
+[data-theme="light"] .theme-btn:hover{color:#2f6bff;border-color:#2f6bff}
+[data-theme="light"] .theme-btn .fa-sun{display:none}
+[data-theme="light"] .theme-btn .fa-moon{display:inline}
+[data-theme="light"] .eyebrow{color:#2a5fd6}
+[data-theme="light"] .cta-band{color:#f4f7ff}
+[data-theme="light"] .cta-band .eyebrow{color:#85b4ff}
+[data-theme="light"] .btn-outline{border-color:#3b57904d;color:#1b2a4a;background:transparent}
+[data-theme="light"] .btn-outline:hover{border-color:#2f6bff;background:#2f6bff0f}
+[data-theme="light"] .proof{color:#4a5876}
+[data-theme="light"] .proof i{color:#0a95b8}
+[data-theme="light"] .visual-grid{background-image:linear-gradient(#1b3a7a0d 1px,transparent 1px),linear-gradient(90deg,#1b3a7a0d 1px,transparent 1px)}
+[data-theme="light"] .hero-photo{border-color:#2f6bff30;box-shadow:0 30px 80px #1b3a7a30}
+[data-theme="light"] .hero-photo img{filter:saturate(.95) brightness(.95)}
+[data-theme="light"] .hero-photo:after{background:linear-gradient(135deg,#ffffff10,#0b1f4a40)}
+[data-theme="light"] .float-card{background:#ffffffee;border-color:#2f6bff25;box-shadow:0 18px 45px #1b3a7a25}
+[data-theme="light"] .float-card span{color:#5d6b85}
+[data-theme="light"] .float-icon{background:#2f6bff1f}
+[data-theme="light"] .trust-strip{background:#1b3a7a06}
+[data-theme="light"] .trust-label{color:#6b7a96}
+[data-theme="light"] .trust-item{color:#34425e}
+[data-theme="light"] .trust-item i{color:#2f6bff}
+[data-theme="light"] .service-card,[data-theme="light"] .contact-panel{background:linear-gradient(145deg,#fff,#f1f5fc)}
+[data-theme="light"] .service-card:before{background:#2f6bff14}
+[data-theme="light"] .service-card:hover{border-color:#2f6bff55;box-shadow:0 20px 45px #1b3a7a1f}
+[data-theme="light"] .service-icon{color:#2b6fe0;background:linear-gradient(135deg,#2f6bff1c,#0a95b814);border-color:#2f6bff30}
+[data-theme="light"] .service-tag{color:#2a62d6}
+[data-theme="light"] .about{background:linear-gradient(180deg,transparent,#e4ebf8cc,transparent)}
+[data-theme="light"] .about-image img{filter:brightness(.95) saturate(.9)}
+[data-theme="light"] .about-image:after{background:linear-gradient(0deg,#07101d55,transparent 70%)}
+[data-theme="light"] .about-stamp{color:#f4f7ff}
+[data-theme="light"] .benefit{color:#2a3957}
+[data-theme="light"] .benefit i{color:#0a95b8}
+[data-theme="light"] .step{border-top-color:#2f6bff44}
+[data-theme="light"] .step-num{color:#2f6bff55}
+[data-theme="light"] .contact-link .ico{background:#2f6bff18;color:#2b6fe0}
+[data-theme="light"] .contact-link small{color:#5d6b85}
+[data-theme="light"] .field label{color:#34425e}
+[data-theme="light"] .field input,[data-theme="light"] .field textarea,[data-theme="light"] .field select{background:#fff;color:#0d1630;border-color:#3b57904d}
+[data-theme="light"] .field input:focus,[data-theme="light"] .field textarea:focus{border-color:#2f6bff}
+[data-theme="light"] footer{color:#5d6b85}
+[data-theme="light"] .footer-social a:hover{color:#2f6bff}
+</style>
+</head>
+<body>
+<div class="visual-grid"></div>
+<header>
+ <div class="container nav">
+  <a class="brand" href="#home" aria-label="Mouad Informatique home"><span class="brand-mark"><i class="fa-solid fa-bolt"></i></span><span>MOUAD <span class="gradient">INFORMATIQUE</span><small>DIGITAL SOLUTIONS</small></span></a>
+  <nav class="nav-links" id="navLinks">
+   <a href="#home"><span data-i18n="nav_home">Home</span></a><a href="#services"><span data-i18n="nav_services">Services</span></a><a href="#about"><span data-i18n="nav_about">About</span></a><a href="#process"><span data-i18n="nav_process">How I Work</span></a><a href="#contact"><span data-i18n="nav_contact">Contact</span></a>
+   <a class="nav-cta" data-wa="w_discuss" href="https://wa.me/212723717826?text=Hello%20Mouad%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener"><span data-i18n="nav_cta">Let's Talk</span> <i class="fa-brands fa-whatsapp"></i></a>
+   <div class="tools-mobile"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="en" aria-label="English">EN</button><button type="button" data-lang="fr" aria-label="Français">FR</button><button type="button" data-lang="ar" aria-label="العربية">AR</button></div><button type="button" class="theme-btn" aria-label="Dark / light mode"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></button></div>
+  </nav>
+  <div class="nav-tools"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="en" aria-label="English">EN</button><button type="button" data-lang="fr" aria-label="Français">FR</button><button type="button" data-lang="ar" aria-label="العربية">AR</button></div><button type="button" class="theme-btn" aria-label="Dark / light mode"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></button><button class="menu-btn" id="menuBtn" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button></div>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div class="reveal">
+   <span class="eyebrow"><span data-i18n="hero_eyebrow">Digital services · One partner</span></span>
+   <h1 data-i18n-html="hero_h1">Build your brand.<br><span class="gradient">Grow your business.</span></h1>
+   <p class="hero-copy"><span data-i18n="hero_copy">From a professional website to smarter marketing and custom digital tools, I help turn your ideas into practical solutions that move your business forward.</span></p>
+   <div class="hero-actions">
+    <a class="btn btn-primary" data-wa="w_idea" href="https://wa.me/212723717826?text=Hello%20Mouad%2C%20I%20have%20a%20project%20in%20mind." target="_blank" rel="noopener"><span data-i18n="hero_btn1">Start a project</span> <i class="fa-solid fa-arrow-right"></i></a>
+    <a class="btn btn-outline" href="#services"><span data-i18n="hero_btn2">Explore services</span> <i class="fa-solid fa-arrow-down"></i></a>
+   </div>
+   <div class="hero-proof">
+    <span class="proof"><i class="fa-solid fa-circle-check"></i> <span data-i18n="proof1">Solutions tailored to you</span></span>
+    <span class="proof"><i class="fa-solid fa-globe"></i> <span data-i18n="proof2">Work from anywhere</span></span>
+   </div>
+  </div>
+  <div class="hero-visual reveal">
+   <div class="hero-photo"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85" alt="Modern digital workspace"></div>
+   <div class="float-card top"><span class="float-icon"><i class="fa-solid fa-code"></i></span><strong><span data-i18n="float1">Digital presence</span></strong><span><span data-i18n="float1s">Designed to make an impact</span></span></div>
+   <div class="float-card bottom"><span class="float-icon"><i class="fa-solid fa-chart-line"></i></span><strong><span data-i18n="float2">Smarter growth</span></strong><span><span data-i18n="float2s">Strategy meets technology</span></span></div>
+  </div>
+ </div>
+</section>
+
+<div class="trust-strip"><div class="container trust-inner">
+ <span class="trust-label"><span data-i18n="trust_label">Digital services for your next step</span></span>
+ <span class="trust-item"><i class="fa-solid fa-laptop-code"></i> <span data-i18n="trust1">Web & Apps</span></span>
+ <span class="trust-item"><i class="fa-solid fa-bullseye"></i> <span data-i18n="trust2">Digital Marketing</span></span>
+ <span class="trust-item"><i class="fa-solid fa-wand-magic-sparkles"></i> <span data-i18n="trust3">AI & Automation</span></span>
+ <span class="trust-item"><i class="fa-solid fa-gears"></i> <span data-i18n="trust4">Custom Software</span></span>
+</div></div>
+
+<section id="services">
+ <div class="container">
+  <div class="section-head reveal"><span class="eyebrow"><span data-i18n="svc_eyebrow">What I do</span></span><h2 data-i18n-html="svc_h2">Everything your business needs to <span class="gradient">go digital.</span></h2><p><span data-i18n="svc_p">One point of contact for your digital presence, customer acquisition and everyday business processes.</span></p></div>
+  <div class="services-grid">
+   <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-window-maximize"></i></div><h3><span data-i18n="s1_t">Website Design & Development</span></h3><p><span data-i18n="s1_d">Modern landing pages, business websites, online stores and web applications built around your goals.</span></p><span class="service-tag"><span data-i18n="s1_g">Web · E-commerce · Mobile-ready</span></span></article>
+   <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div><h3><span data-i18n="s2_t">SEO & Search Visibility</span></h3><p><span data-i18n="s2_d">Technical improvements, on-page SEO and content structure to help customers find your business online.</span></p><span class="service-tag"><span data-i18n="s2_g">Google · Local SEO · Content</span></span></article>
+   <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div><h3><span data-i18n="s3_t">Digital Advertising</span></h3><p><span data-i18n="s3_d">Campaign planning and ad creative for Google and social platforms, focused on reaching the right audience.</span></p><span class="service-tag"><span data-i18n="s3_g">Google Ads · Meta Ads</span></span></article>
+   <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-hashtag"></i></div><h3><span data-i18n="s4_t">Social Media & Content</span></h3><p><span data-i18n="s4_d">Visual content, social profiles and practical content plans that give your brand a consistent online presence.</span></p><span class="service-tag"><span data-i18n="s4_g">Instagram · Facebook · Content</span></span></article>
+   <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-brain"></i></div><h3><span data-i18n="s5_t">AI Solutions</span></h3><p><span data-i18n="s5_d">Useful AI integrations, intelligent assistants and chatbots that help simplify customer communication and tasks.</span></p><span class="service-tag"><span data-i18n="s5_g">AI · Chatbots · Integration</span></span></article>
+   <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-gears"></i></div><h3><span data-i18n="s6_t">Automation & Custom Software</span></h3><p><span data-i18n="s6_d">Custom business tools, dashboards and automated workflows designed around the way your team works.</span></p><span class="service-tag"><span data-i18n="s6_g">Business tools · Workflow</span></span></article>
+   <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div><h3><span data-i18n="s7_t">Graphic Design & Branding</span></h3><p><span data-i18n="s7_d">Brand identities, promotional designs and digital visuals that keep your business looking consistent.</span></p><span class="service-tag"><span data-i18n="s7_g">Branding · Visual design</span></span></article>
+   <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3><span data-i18n="s8_t">IT Support & Technical Services</span></h3><p><span data-i18n="s8_d">Computer troubleshooting, software setup, networks and practical technical support for everyday work.</span></p><span class="service-tag"><span data-i18n="s8_g">Computer · Network · Support</span></span></article>
+   <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div><h3><span data-i18n="s9_t">Digital Consulting</span></h3><p><span data-i18n="s9_d">Clear guidance on choosing tools, improving your online presence and planning the right digital solution.</span></p><span class="service-tag"><span data-i18n="s9_g">Planning · Strategy · Guidance</span></span></article>
+  </div>
+ </div>
+</section>
+
+<section class="about" id="about">
+ <div class="container about-grid">
+  <div class="about-image reveal"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85" alt="Creative team collaborating around a table"><div class="about-stamp"><i class="fa-solid fa-circle-nodes gradient"></i> <span data-i18n="about_stamp">Technology with purpose</span></div></div>
+  <div class="about-copy reveal"><span class="eyebrow"><span data-i18n="about_eyebrow">A practical digital partner</span></span><h2 data-i18n-html="about_h2">Your ideas deserve <span class="gradient">the right tools.</span></h2><p><span data-i18n="about_p1">I bring design, technology and digital strategy together to help businesses build a stronger online presence and work more efficiently. Whether you need a new website, better visibility, creative content or a custom tool, we start with your goals and shape the solution around them.</span></p><p><span data-i18n="about_p2">Clear communication, practical thinking and solutions built for real business needs.</span></p>
+   <div class="benefits">
+    <div class="benefit"><i class="fa-solid fa-check"></i><span><span data-i18n="b1">Solutions built around your project</span></span></div>
+    <div class="benefit"><i class="fa-solid fa-check"></i><span><span data-i18n="b2">Responsive design across devices</span></span></div>
+    <div class="benefit"><i class="fa-solid fa-check"></i><span><span data-i18n="b3">Direct communication with Mouad</span></span></div>
+    <div class="benefit"><i class="fa-solid fa-check"></i><span><span data-i18n="b4">Multiple digital services in one place</span></span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="process">
+ <div class="container">
+  <div class="section-head reveal"><span class="eyebrow"><span data-i18n="pr_eyebrow">Simple process</span></span><h2 data-i18n-html="pr_h2">From first message to <span class="gradient">finished project.</span></h2><p><span data-i18n="pr_p">A straightforward process keeps your project clear, focused and moving forward.</span></p></div>
+  <div class="process-grid">
+   <div class="step reveal"><span class="step-num">01</span><h3><span data-i18n="st1_t">Tell me your idea</span></h3><p><span data-i18n="st1_d">Share your goals, needs and what you want your business to achieve.</span></p></div>
+   <div class="step reveal"><span class="step-num">02</span><h3><span data-i18n="st2_t">Plan the solution</span></h3><p><span data-i18n="st2_d">We define the right approach, features, scope and next steps.</span></p></div>
+   <div class="step reveal"><span class="step-num">03</span><h3><span data-i18n="st3_t">Build & refine</span></h3><p><span data-i18n="st3_d">I work on the solution and keep communication clear as the project develops.</span></p></div>
+   <div class="step reveal"><span class="step-num">04</span><h3><span data-i18n="st4_t">Launch & support</span></h3><p><span data-i18n="st4_d">Your project goes live, with a clear handover and support options.</span></p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="cta-band reveal">
+   <div><span class="eyebrow"><span data-i18n="cta_eyebrow">Have a project in mind?</span></span><h2 data-i18n-html="cta_h2">Let's turn your next idea into a <span class="gradient">digital solution.</span></h2><p><span data-i18n="cta_p">Tell me what you need. I'll get back to you on WhatsApp.</span></p></div>
+   <a class="btn" data-wa="w_quote" href="https://wa.me/212723717826?text=Hello%20Mouad%2C%20I%20would%20like%20a%20quote%20for%20my%20project." target="_blank" rel="noopener"><span data-i18n="cta_btn">Get a free consultation</span> <i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="container contact-grid">
+  <div class="contact-info reveal"><span class="eyebrow"><span data-i18n="ct_eyebrow">Get in touch</span></span><h2 data-i18n-html="ct_h2">Let's talk about <span class="gradient">your project.</span></h2><p><span data-i18n="ct_p">Have a question or need a quote? Send a message and tell me what you're looking to build.</span></p>
+   <a class="contact-link" href="https://wa.me/212723717826" target="_blank" rel="noopener"><span class="ico"><i class="fa-brands fa-whatsapp"></i></span><span><small><span data-i18n="ct_wa">WhatsApp</span></small><strong>+212 723 717 826</strong></span></a>
+   <a class="contact-link" href="https://www.instagram.com/mouad_informatique/" target="_blank" rel="noopener"><span class="ico"><i class="fa-brands fa-instagram"></i></span><span><small><span data-i18n="ct_ig">Instagram</span></small><strong>@mouad_informatique</strong></span></a>
+  </div>
+  <form class="contact-panel reveal" id="contactForm">
+   <h3><span data-i18n="f_h3">Send a project message</span></h3><p><span data-i18n="f_p">Complete the fields below. Your message will open in WhatsApp, ready to send.</span></p>
+   <div class="field"><label for="name"><span data-i18n="f_name">Your name</span></label><input id="name" name="name" data-i18n-ph="ph_name" placeholder="Enter your name" required></div>
+   <div class="field"><label for="service"><span data-i18n="f_service">What do you need?</span></label><select id="service" name="service"><option data-i18n="o1">Website design & development</option><option data-i18n="o2">SEO & digital marketing</option><option data-i18n="o3">Social media & graphic design</option><option data-i18n="o4">AI & automation</option><option data-i18n="o5">Custom software</option><option data-i18n="o6">IT support</option><option data-i18n="o7">Something else</option></select></div>
+   <div class="field"><label for="message"><span data-i18n="f_msg">Tell me about your project</span></label><textarea id="message" name="message" data-i18n-ph="ph_msg" placeholder="A few details about your idea..." required></textarea></div>
+   <button class="btn btn-primary" type="submit"><span data-i18n="f_btn">Continue on WhatsApp</span> <i class="fa-brands fa-whatsapp"></i></button>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer><div class="container footer-inner">
+ <a class="brand" href="#home"><span class="brand-mark"><i class="fa-solid fa-bolt"></i></span><span>MOUAD <span class="gradient">INFORMATIQUE</span><small>DIGITAL SOLUTIONS</small></span></a>
+ <span>© <span id="year"></span> <span data-i18n="rights">Mouad Informatique. All rights reserved.</span></span>
+ <div class="footer-social"><a href="https://wa.me/212723717826" target="_blank" rel="noopener"><span data-i18n="f_wa">WhatsApp</span></a><a href="https://www.instagram.com/mouad_informatique/" target="_blank" rel="noopener"><span data-i18n="f_ig">Instagram</span></a><a href="#home"><span data-i18n="f_top">Back to top ↑</span></a></div>
+</div></footer>
+<a class="whatsapp-float" data-wa="w_q" href="https://wa.me/212723717826?text=Hello%20Mouad%2C%20I%20have%20a%20question." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<script>
+const I18N={"en": {"title": "Mouad Informatique | Digital Solutions", "desc": "Mouad Informatique. Websites, digital marketing, SEO, social media, AI solutions and custom software.", "nav_home": "Home", "nav_services": "Services", "nav_about": "About", "nav_process": "How I Work", "nav_contact": "Contact", "nav_cta": "Let's Talk", "w_discuss": "Hello Mouad, I would like to discuss a project.", "w_idea": "Hello Mouad, I have a project in mind.", "w_quote": "Hello Mouad, I would like a quote for my project.", "w_q": "Hello Mouad, I have a question.", "w_form": "Hello Mouad, my name is {name}.\nService: {service}\nProject details: {message}", "hero_eyebrow": "Digital services · One partner", "hero_h1": "Build your brand.<br><span class=\"gradient\">Grow your business.</span>", "hero_copy": "From a professional website to smarter marketing and custom digital tools, I help turn your ideas into practical solutions that move your business forward.", "hero_btn1": "Start a project", "hero_btn2": "Explore services", "proof1": "Solutions tailored to you", "proof2": "Work from anywhere", "float1": "Digital presence", "float1s": "Designed to make an impact", "float2": "Smarter growth", "float2s": "Strategy meets technology", "trust_label": "Digital services for your next step", "trust1": "Web & Apps", "trust2": "Digital Marketing", "trust3": "AI & Automation", "trust4": "Custom Software", "svc_eyebrow": "What I do", "svc_h2": "Everything your business needs to <span class=\"gradient\">go digital.</span>", "svc_p": "One point of contact for your digital presence, customer acquisition and everyday business processes.", "s1_t": "Website Design & Development", "s1_d": "Modern landing pages, business websites, online stores and web applications built around your goals.", "s1_g": "Web · E-commerce · Mobile-ready", "s2_t": "SEO & Search Visibility", "s2_d": "Technical improvements, on-page SEO and content structure to help customers find your business online.", "s2_g": "Google · Local SEO · Content", "s3_t": "Digital Advertising", "s3_d": "Campaign planning and ad creative for Google and social platforms, focused on reaching the right audience.", "s3_g": "Google Ads · Meta Ads", "s4_t": "Social Media & Content", "s4_d": "Visual content, social profiles and practical content plans that give your brand a consistent online presence.", "s4_g": "Instagram · Facebook · Content", "s5_t": "AI Solutions", "s5_d": "Useful AI integrations, intelligent assistants and chatbots that help simplify customer communication and tasks.", "s5_g": "AI · Chatbots · Integration", "s6_t": "Automation & Custom Software", "s6_d": "Custom business tools, dashboards and automated workflows designed around the way your team works.", "s6_g": "Business tools · Workflow", "s7_t": "Graphic Design & Branding", "s7_d": "Brand identities, promotional designs and digital visuals that keep your business looking consistent.", "s7_g": "Branding · Visual design", "s8_t": "IT Support & Technical Services", "s8_d": "Computer troubleshooting, software setup, networks and practical technical support for everyday work.", "s8_g": "Computer · Network · Support", "s9_t": "Digital Consulting", "s9_d": "Clear guidance on choosing tools, improving your online presence and planning the right digital solution.", "s9_g": "Planning · Strategy · Guidance", "about_stamp": "Technology with purpose", "about_eyebrow": "A practical digital partner", "about_h2": "Your ideas deserve <span class=\"gradient\">the right tools.</span>", "about_p1": "I bring design, technology and digital strategy together to help businesses build a stronger online presence and work more efficiently. Whether you need a new website, better visibility, creative content or a custom tool, we start with your goals and shape the solution around them.", "about_p2": "Clear communication, practical thinking and solutions built for real business needs.", "b1": "Solutions built around your project", "b2": "Responsive design across devices", "b3": "Direct communication with Mouad", "b4": "Multiple digital services in one place", "pr_eyebrow": "Simple process", "pr_h2": "From first message to <span class=\"gradient\">finished project.</span>", "pr_p": "A straightforward process keeps your project clear, focused and moving forward.", "st1_t": "Tell me your idea", "st1_d": "Share your goals, needs and what you want your business to achieve.", "st2_t": "Plan the solution", "st2_d": "We define the right approach, features, scope and next steps.", "st3_t": "Build & refine", "st3_d": "I work on the solution and keep communication clear as the project develops.", "st4_t": "Launch & support", "st4_d": "Your project goes live, with a clear handover and support options.", "cta_eyebrow": "Have a project in mind?", "cta_h2": "Let's turn your next idea into a <span class=\"gradient\">digital solution.</span>", "cta_p": "Tell me what you need. I'll get back to you on WhatsApp.", "cta_btn": "Get a free consultation", "ct_eyebrow": "Get in touch", "ct_h2": "Let's talk about <span class=\"gradient\">your project.</span>", "ct_p": "Have a question or need a quote? Send a message and tell me what you're looking to build.", "ct_wa": "WhatsApp", "ct_ig": "Instagram", "f_h3": "Send a project message", "f_p": "Complete the fields below. Your message will open in WhatsApp, ready to send.", "f_name": "Your name", "ph_name": "Enter your name", "f_service": "What do you need?", "o1": "Website design & development", "o2": "SEO & digital marketing", "o3": "Social media & graphic design", "o4": "AI & automation", "o5": "Custom software", "o6": "IT support", "o7": "Something else", "f_msg": "Tell me about your project", "ph_msg": "A few details about your idea...", "f_btn": "Continue on WhatsApp", "rights": "Mouad Informatique. All rights reserved.", "f_wa": "WhatsApp", "f_ig": "Instagram", "f_top": "Back to top ↑"}, "fr": {"title": "Mouad Informatique | Solutions digitales", "desc": "Mouad Informatique. Sites web, marketing digital, SEO, réseaux sociaux, solutions d'IA et logiciels sur mesure.", "nav_home": "Accueil", "nav_services": "Services", "nav_about": "À propos", "nav_process": "Mon approche", "nav_contact": "Contact", "nav_cta": "Parlons-en", "w_discuss": "Bonjour Mouad, je souhaiterais discuter d'un projet.", "w_idea": "Bonjour Mouad, j'ai un projet en tête.", "w_quote": "Bonjour Mouad, je souhaiterais un devis pour mon projet.", "w_q": "Bonjour Mouad, j'ai une question.", "w_form": "Bonjour Mouad, je m'appelle {name}.\nService : {service}\nDétails du projet : {message}", "hero_eyebrow": "Services digitaux · Un seul partenaire", "hero_h1": "Construisez votre marque.<br><span class=\"gradient\">Développez votre activité.</span>", "hero_copy": "D'un site web professionnel à un marketing plus intelligent et des outils numériques sur mesure, je transforme vos idées en solutions pratiques qui font avancer votre activité.", "hero_btn1": "Démarrer un projet", "hero_btn2": "Découvrir les services", "proof1": "Des solutions adaptées à vous", "proof2": "Je travaille où que vous soyez", "float1": "Présence digitale", "float1s": "Conçue pour faire impression", "float2": "Croissance plus intelligente", "float2s": "La stratégie rencontre la technologie", "trust_label": "Des services digitaux pour votre prochaine étape", "trust1": "Web & Applications", "trust2": "Marketing digital", "trust3": "IA & Automatisation", "trust4": "Logiciels sur mesure", "svc_eyebrow": "Ce que je fais", "svc_h2": "Tout ce dont votre entreprise a besoin pour <span class=\"gradient\">passer au digital.</span>", "svc_p": "Un seul interlocuteur pour votre présence digitale, l'acquisition de clients et vos processus quotidiens.", "s1_t": "Conception et développement de sites web", "s1_d": "Pages d'atterrissage modernes, sites d'entreprise, boutiques en ligne et applications web conçus autour de vos objectifs.", "s1_g": "Web · E-commerce · Adapté au mobile", "s2_t": "SEO et visibilité sur les moteurs de recherche", "s2_d": "Optimisations techniques, SEO on-page et structure de contenu pour aider vos clients à trouver votre entreprise en ligne.", "s2_g": "Google · SEO local · Contenu", "s3_t": "Publicité digitale", "s3_d": "Planification de campagnes et créations publicitaires pour Google et les réseaux sociaux, pour toucher la bonne audience.", "s3_g": "Google Ads · Meta Ads", "s4_t": "Réseaux sociaux et contenu", "s4_d": "Contenus visuels, profils sociaux et plans de contenu pratiques qui donnent à votre marque une présence cohérente en ligne.", "s4_g": "Instagram · Facebook · Contenu", "s5_t": "Solutions d'IA", "s5_d": "Intégrations d'IA utiles, assistants intelligents et chatbots qui simplifient la communication client et les tâches.", "s5_g": "IA · Chatbots · Intégration", "s6_t": "Automatisation et logiciels sur mesure", "s6_d": "Outils métier sur mesure, tableaux de bord et workflows automatisés conçus selon la façon de travailler de votre équipe.", "s6_g": "Outils métier · Workflow", "s7_t": "Design graphique et branding", "s7_d": "Identités de marque, supports promotionnels et visuels digitaux qui gardent une image cohérente pour votre entreprise.", "s7_g": "Branding · Design visuel", "s8_t": "Assistance informatique et services techniques", "s8_d": "Dépannage informatique, installation de logiciels, réseaux et assistance technique pratique pour le travail au quotidien.", "s8_g": "Informatique · Réseau · Assistance", "s9_t": "Conseil digital", "s9_d": "Des conseils clairs pour choisir vos outils, améliorer votre présence en ligne et planifier la bonne solution digitale.", "s9_g": "Planification · Stratégie · Conseils", "about_stamp": "La technologie avec un objectif", "about_eyebrow": "Un partenaire digital pragmatique", "about_h2": "Vos idées méritent <span class=\"gradient\">les bons outils.</span>", "about_p1": "J'allie design, technologie et stratégie digitale pour aider les entreprises à renforcer leur présence en ligne et à travailler plus efficacement. Que vous ayez besoin d'un nouveau site, de plus de visibilité, de contenus créatifs ou d'un outil sur mesure, nous partons de vos objectifs pour façonner la solution.", "about_p2": "Une communication claire, une réflexion pragmatique et des solutions conçues pour de vrais besoins professionnels.", "b1": "Des solutions construites autour de votre projet", "b2": "Design adaptatif sur tous les appareils", "b3": "Communication directe avec Mouad", "b4": "Plusieurs services digitaux au même endroit", "pr_eyebrow": "Un processus simple", "pr_h2": "Du premier message au <span class=\"gradient\">projet finalisé.</span>", "pr_p": "Un processus simple garde votre projet clair, ciblé et en mouvement.", "st1_t": "Parlez-moi de votre idée", "st1_d": "Partagez vos objectifs, vos besoins et ce que vous souhaitez accomplir.", "st2_t": "Planifier la solution", "st2_d": "Nous définissons la bonne approche, les fonctionnalités, le périmètre et les prochaines étapes.", "st3_t": "Créer et affiner", "st3_d": "Je développe la solution en gardant une communication claire tout au long du projet.", "st4_t": "Lancement et accompagnement", "st4_d": "Votre projet est mis en ligne, avec une remise claire et des options de support.", "cta_eyebrow": "Un projet en tête ?", "cta_h2": "Transformons votre prochaine idée en <span class=\"gradient\">solution digitale.</span>", "cta_p": "Dites-moi ce dont vous avez besoin. Je vous réponds sur WhatsApp.", "cta_btn": "Consultation gratuite", "ct_eyebrow": "Contactez-moi", "ct_h2": "Parlons de <span class=\"gradient\">votre projet.</span>", "ct_p": "Une question ou besoin d'un devis ? Envoyez un message et dites-moi ce que vous souhaitez créer.", "ct_wa": "WhatsApp", "ct_ig": "Instagram", "f_h3": "Envoyer un message de projet", "f_p": "Remplissez les champs ci-dessous. Votre message s'ouvrira dans WhatsApp, prêt à être envoyé.", "f_name": "Votre nom", "ph_name": "Entrez votre nom", "f_service": "De quoi avez-vous besoin ?", "o1": "Conception et développement de site web", "o2": "SEO et marketing digital", "o3": "Réseaux sociaux et design graphique", "o4": "IA et automatisation", "o5": "Logiciels sur mesure", "o6": "Assistance informatique", "o7": "Autre chose", "f_msg": "Parlez-moi de votre projet", "ph_msg": "Quelques détails sur votre idée...", "f_btn": "Continuer sur WhatsApp", "rights": "Mouad Informatique. Tous droits réservés.", "f_wa": "WhatsApp", "f_ig": "Instagram", "f_top": "Retour en haut ↑"}, "ar": {"title": "Mouad Informatique | حلول رقمية", "desc": "Mouad Informatique. مواقع إلكترونية، تسويق رقمي، سيو، وسائل التواصل الاجتماعي، حلول الذكاء الاصطناعي وبرمجيات مخصصة.", "nav_home": "الرئيسية", "nav_services": "الخدمات", "nav_about": "من أنا", "nav_process": "طريقة عملي", "nav_contact": "اتصل بي", "nav_cta": "لنتحدث", "w_discuss": "مرحبًا معاذ، أود مناقشة مشروع.", "w_idea": "مرحبًا معاذ، لدي مشروع في بالي.", "w_quote": "مرحبًا معاذ، أود الحصول على عرض سعر لمشروعي.", "w_q": "مرحبًا معاذ، لدي سؤال.", "w_form": "مرحبًا معاذ، اسمي {name}.\nالخدمة: {service}\nتفاصيل المشروع: {message}", "hero_eyebrow": "خدمات رقمية · شريك واحد", "hero_h1": "ابنِ علامتك التجارية.<br><span class=\"gradient\">ونمِّ عملك.</span>", "hero_copy": "من موقع إلكتروني احترافي إلى تسويق أذكى وأدوات رقمية مخصصة، أساعدك على تحويل أفكارك إلى حلول عملية تدفع عملك إلى الأمام.", "hero_btn1": "ابدأ مشروعك", "hero_btn2": "استكشف الخدمات", "proof1": "حلول مصممة خصيصًا لك", "proof2": "أعمل من أي مكان", "float1": "حضور رقمي", "float1s": "مصمم لإحداث تأثير", "float2": "نمو أذكى", "float2s": "الاستراتيجية تلتقي بالتقنية", "trust_label": "خدمات رقمية لخطوتك القادمة", "trust1": "مواقع وتطبيقات", "trust2": "التسويق الرقمي", "trust3": "الذكاء الاصطناعي والأتمتة", "trust4": "برمجيات مخصصة", "svc_eyebrow": "ما أقدمه", "svc_h2": "كل ما تحتاجه شركتك <span class=\"gradient\">للتحول الرقمي.</span>", "svc_p": "نقطة اتصال واحدة لحضورك الرقمي، واستقطاب العملاء، وإجراءات عملك اليومية.", "s1_t": "تصميم وتطوير المواقع", "s1_d": "صفحات هبوط حديثة ومواقع للشركات ومتاجر إلكترونية وتطبيقات ويب مبنية حول أهدافك.", "s1_g": "ويب · تجارة إلكترونية · متوافق مع الجوال", "s2_t": "السيو والظهور في محركات البحث", "s2_d": "تحسينات تقنية وسيو للصفحات وهيكلة المحتوى لمساعدة العملاء على إيجاد نشاطك على الإنترنت.", "s2_g": "جوجل · السيو المحلي · المحتوى", "s3_t": "الإعلانات الرقمية", "s3_d": "تخطيط الحملات وتصميم الإعلانات على جوجل ومنصات التواصل، للوصول إلى الجمهور المناسب.", "s3_g": "Google Ads · Meta Ads", "s4_t": "وسائل التواصل والمحتوى", "s4_d": "محتوى مرئي وحسابات اجتماعية وخطط محتوى عملية تمنح علامتك حضورًا متسقًا على الإنترنت.", "s4_g": "إنستغرام · فيسبوك · المحتوى", "s5_t": "حلول الذكاء الاصطناعي", "s5_d": "تكاملات ذكاء اصطناعي مفيدة ومساعدون أذكياء وروبوتات محادثة تبسّط التواصل مع العملاء والمهام.", "s5_g": "ذكاء اصطناعي · روبوتات محادثة · تكامل", "s6_t": "الأتمتة والبرمجيات المخصصة", "s6_d": "أدوات أعمال مخصصة ولوحات تحكم وسير عمل آلي مصمم وفق طريقة عمل فريقك.", "s6_g": "أدوات الأعمال · سير العمل", "s7_t": "التصميم الجرافيكي والهوية البصرية", "s7_d": "هويات بصرية وتصاميم ترويجية ومرئيات رقمية تحافظ على مظهر متناسق لنشاطك.", "s7_g": "الهوية البصرية · التصميم", "s8_t": "الدعم التقني والخدمات الفنية", "s8_d": "إصلاح أعطال الحاسوب وتثبيت البرامج والشبكات ودعم تقني عملي للعمل اليومي.", "s8_g": "حاسوب · شبكات · دعم", "s9_t": "الاستشارات الرقمية", "s9_d": "إرشادات واضحة لاختيار الأدوات وتحسين حضورك على الإنترنت وتخطيط الحل الرقمي المناسب.", "s9_g": "تخطيط · استراتيجية · إرشاد", "about_stamp": "تقنية بهدف", "about_eyebrow": "شريك رقمي عملي", "about_h2": "أفكارك تستحق <span class=\"gradient\">الأدوات المناسبة.</span>", "about_p1": "أجمع بين التصميم والتقنية والاستراتيجية الرقمية لمساعدة الشركات على بناء حضور أقوى على الإنترنت والعمل بكفاءة أكبر. سواء كنت بحاجة إلى موقع جديد أو ظهور أفضل أو محتوى إبداعي أو أداة مخصصة، فنحن نبدأ من أهدافك ونصيغ الحل حولها.", "about_p2": "تواصل واضح، وتفكير عملي، وحلول مبنية على احتياجات العمل الحقيقية.", "b1": "حلول مبنية حول مشروعك", "b2": "تصميم متجاوب مع جميع الأجهزة", "b3": "تواصل مباشر مع معاذ", "b4": "خدمات رقمية متعددة في مكان واحد", "pr_eyebrow": "عملية بسيطة", "pr_h2": "من أول رسالة إلى <span class=\"gradient\">مشروع مكتمل.</span>", "pr_p": "عملية واضحة تبقي مشروعك منظمًا ومركزًا ومتقدمًا باستمرار.", "st1_t": "أخبرني بفكرتك", "st1_d": "شاركني أهدافك واحتياجاتك وما تريد أن يحققه عملك.", "st2_t": "تخطيط الحل", "st2_d": "نحدد معًا النهج المناسب والميزات والنطاق والخطوات التالية.", "st3_t": "البناء والتحسين", "st3_d": "أعمل على الحل مع الحفاظ على تواصل واضح أثناء تطور المشروع.", "st4_t": "الإطلاق والدعم", "st4_d": "يتم إطلاق مشروعك مع تسليم واضح وخيارات للدعم.", "cta_eyebrow": "هل لديك مشروع في بالك؟", "cta_h2": "لنحوّل فكرتك القادمة إلى <span class=\"gradient\">حل رقمي.</span>", "cta_p": "أخبرني بما تحتاجه. سأرد عليك عبر واتساب.", "cta_btn": "استشارة مجانية", "ct_eyebrow": "تواصل معي", "ct_h2": "لنتحدث عن <span class=\"gradient\">مشروعك.</span>", "ct_p": "لديك سؤال أو تحتاج إلى عرض سعر؟ أرسل رسالة وأخبرني بما تريد بناءه.", "ct_wa": "واتساب", "ct_ig": "إنستغرام", "f_h3": "أرسل رسالة حول مشروعك", "f_p": "املأ الحقول أدناه. ستفتح رسالتك في واتساب جاهزة للإرسال.", "f_name": "اسمك", "ph_name": "أدخل اسمك", "f_service": "ماذا تحتاج؟", "o1": "تصميم وتطوير المواقع", "o2": "السيو والتسويق الرقمي", "o3": "وسائل التواصل والتصميم الجرافيكي", "o4": "الذكاء الاصطناعي والأتمتة", "o5": "برمجيات مخصصة", "o6": "الدعم التقني", "o7": "شيء آخر", "f_msg": "حدثني عن مشروعك", "ph_msg": "بعض التفاصيل عن فكرتك...", "f_btn": "المتابعة على واتساب", "rights": "Mouad Informatique. جميع الحقوق محفوظة.", "f_wa": "واتساب", "f_ig": "إنستغرام", "f_top": "العودة للأعلى ↑"}};
+const root=document.documentElement;
+let lang=I18N[root.lang]?root.lang:'en';
+function applyLang(l){
+ lang=I18N[l]?l:'en';const d=I18N[lang],en=I18N.en,t=k=>d[k]!==undefined?d[k]:en[k];
+ root.lang=lang;root.dir=lang==='ar'?'rtl':'ltr';
+ document.title=t('title');document.querySelector('meta[name="description"]').setAttribute('content',t('desc'));
+ document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=t(el.dataset.i18n)});
+ document.querySelectorAll('[data-i18n-html]').forEach(el=>{el.innerHTML=t(el.dataset.i18nHtml)});
+ document.querySelectorAll('[data-i18n-ph]').forEach(el=>{el.setAttribute('placeholder',t(el.dataset.i18nPh))});
+ document.querySelectorAll('a[data-wa]').forEach(a=>{a.href='https://wa.me/212723717826?text='+encodeURIComponent(t(a.dataset.wa))});
+ document.querySelectorAll('[data-lang]').forEach(b=>{const on=b.dataset.lang===lang;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)});
+ try{localStorage.setItem('mi-lang',lang)}catch(e){}
+}
+function applyTheme(t){
+ root.setAttribute('data-theme',t);
+ document.querySelector('meta[name="theme-color"]').setAttribute('content',t==='light'?'#f3f6fc':'#080d1b');
+ try{localStorage.setItem('mi-theme',t)}catch(e){}
+}
+document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>applyLang(b.dataset.lang)));
+document.querySelectorAll('.theme-btn').forEach(b=>b.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='light'?'dark':'light')));
+applyTheme(root.getAttribute('data-theme')==='light'?'light':'dark');
+applyLang(lang);
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>{navLinks.classList.toggle('open');menuBtn.innerHTML=navLinks.classList.contains('open')?'<i class="fa-solid fa-xmark"></i>':'<i class="fa-solid fa-bars"></i>'});
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.innerHTML='<i class="fa-solid fa-bars"></i>'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('name').value.trim(),service=document.getElementById('service').value,message=document.getElementById('message').value.trim();const text=I18N[lang].w_form.replace('{name}',()=>name).replace('{service}',()=>service).replace('{message}',()=>message);window.open('https://wa.me/212723717826?text='+encodeURIComponent(text),'_blank','noopener')});
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
